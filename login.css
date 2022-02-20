@@ -1,0 +1,124 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 1.5rem;
+    background-color: #222222;
+    color: #9b9b9b;
+    margin: 0;
+}
+
+.form-login{
+    margin: 0 auto;
+    padding: 15px;
+    background-color: #111111;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 5px 5px 50px 5px #414141;
+}
+
+#form-header{
+    margin-bottom: 20px;
+}
+
+
+.form-titulo{
+    margin-bottom: 0;
+}
+
+
+.form-group{
+    position: relative;
+    padding: 15px 0 0;
+    margin: 15px auto;
+    width: 80%;
+}
+
+.form-input{
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 1.3rem;
+    color: #fff;
+    padding: 7px 0;
+    background: transparent;
+    transition: 0.2s;
+}
+
+.form-input::placeholder{
+    color: transparent;
+}
+
+.form-input:placeholder-shown ~ .form-label{
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+}
+
+.form-input:focus{
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to right, #ff0043 50%, #ea38a3 100%) 1;
+}
+
+.form-input:focus ~ .form-label{
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #ff0043;
+    font-weight: 700;
+}
+
+.form-input:required{
+    display: none;
+}
+
+.form-input:invalid{
+    display: none;
+}
+
+.form-label{
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #9b9b9b;
+}
+
+.form-botao{
+    background-color: #222222;
+    color: #fff;
+    font-weight: 500;
+    width: 25%;
+    margin: 10px auto;
+    height: 30px;
+    transition: 0.3s;
+    display: block;
+    border: 2px solid;
+    border-image: linear-gradient(to right, #ff0043 50%, #ea38a3 100%) 1;
+}
+
+.form-botao:hover{
+    transition: 0.3s;
+    transform: scale(1.1);
+    border: none;
+    background: linear-gradient(to right bottom, #ff0043 50%, #ea38a3 100%);
+    border-radius: 5px;
+    color: #fff;
+    box-shadow: 1px 1px 5px 1px #414141;
+}
+
+.link{
+    color: #0067ff;
+    text-decoration: none;
+}
